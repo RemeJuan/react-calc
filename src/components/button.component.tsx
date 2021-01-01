@@ -6,5 +6,7 @@ interface IProps {
 }
 
 export const KeyPadButtonComponent: FunctionComponent<IProps> = ({onClick, button}) => {
-  return <button name={button} onClick={() => onClick(button)}>{button}</button>
+  return (
+    <button name={button} onClick={() => onClick(button)}>{button}</button>
+  )
 }

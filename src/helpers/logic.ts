@@ -17,11 +17,11 @@ export const calculate = (result: string): string => {
   if (result.includes('--')) {
     checkResult = result.replace('--', '+');
   } else {
-    checkResult = result
+    checkResult = result;
   }
 
   try {
-    return (eval(checkResult) || "") + "";
+    return eval(checkResult) + "";
   } catch (e) {
     return "error";
   }

@@ -21,6 +21,7 @@ export const calculate = (result: string): string => {
   }
 
   try {
+    // eslint-disable-next-line no-eval
     return eval(checkResult) + "";
   } catch (e) {
     return "error";

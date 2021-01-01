@@ -17,12 +17,12 @@ jobs:
         uses: actions/setup-node@v2.1.4
       
       - name: Setup project
-        uses: Borales/actions-yarn@v2
+        uses: Borales/actions-yarn@v2.3.0
         with:
           cmd: install
   
       - name: Run Test
-        uses: Borales/actions-yarn@v2
+        uses: Borales/actions-yarn@v2.3.0
         with:
           cmd: test --coverage
 

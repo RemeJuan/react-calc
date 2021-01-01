@@ -1,10 +1,10 @@
 import React, {FunctionComponent} from "react";
 
 interface IProps {
-  onClick: (name: string) => void;
-  name: string
+  onClick: (button: string) => void;
+  button: string
 }
 
-export const KeyPadButtonComponent: FunctionComponent<IProps> = ({onClick, name}) => {
-  return <button onClick={() => onClick(name)}>{name}</button>
+export const KeyPadButtonComponent: FunctionComponent<IProps> = ({onClick, button}) => {
+  return <button name={button} onClick={() => onClick(button)}>{button}</button>
 }

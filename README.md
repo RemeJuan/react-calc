@@ -4,6 +4,8 @@
 [![codecov](https://codecov.io/gh/RemeJuan/react-calc/branch/master/graph/badge.svg?token=PZ8IKJEW6A)](https://codecov.io/gh/RemeJuan/react-calc)
 ![Coverage Test](https://github.com/RemeJuan/react-calc/workflows/Coverage%20Test/badge.svg)
 
+[Live URL](https://calc.remelehane.dev)
+
 ## Instructions
 
 To run this project clone this repo and then:
@@ -12,3 +14,5 @@ To run this project clone this repo and then:
 * RUn `yarn start`
 
 Testing is managed with jest and can be run using `yarn test`.
+
+**Version**: 72cf4fe47f85c39779267d0ecee07655a354e623

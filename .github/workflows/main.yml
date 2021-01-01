@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      - uses: c-hive/gha-yarn-cache@v1
 
       - name: Set env
         run: echo "ACTIONS_ALLOW_UNSECURE_COMMANDS=true" >> $GITHUB_ENV
@@ -16,15 +17,11 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.4
       
-      - name: Setup project
-        uses: Borales/actions-yarn@v2.3.0
-        with:
-          cmd: install
-  
-      - name: Run Test
-        uses: Borales/actions-yarn@v2.3.0
-        with:
-          cmd: test --coverage
+      - name: Install JS dependencies
+        run: yarn install
+        
+      - name: Test
+        run: yarn test --coverage
 
       - name: CodeCov
         uses: codecov/codecov-action@v1

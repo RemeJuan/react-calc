@@ -1,7 +1,13 @@
+h1 {
+    text-align: center;
+}
+
 .result {
     height: 60px;
-    background-color: #bbb;
+    background-color: #fed800;
     width: 100%;
+    color: #000;
+    background-blend-mode: lighten;
 }
 
 .result p {
@@ -12,16 +18,16 @@
 
 .calculator-body {
     max-width: 400px;
-    margin: auto;
-}
-
-.button {
-    display: block;
-    background-color: #bbb;
+    margin: 20px auto 0 auto;
+    background-color: #1795d4;
+    color: #fff;
+    border: 2px solid #000;
 }
 
 button {
     width: 25%;
     height: 60px;
     font-size: 30px;
+    background-color: #1795d4;
+    color: #fff;
 }
